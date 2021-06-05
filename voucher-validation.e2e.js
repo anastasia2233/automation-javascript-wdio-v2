@@ -66,7 +66,7 @@ describe('Voucher Registration Page', () => {
 
         testCases.forEach(testCase => {
 
-            it('For subscriptionLength: ' + testCase.email, () => {
+            it('For subscription length: ' + testCase.email, () => {
 
                 VoucherPage.fillForm(testCase);
                 VoucherPage.submitForm();
@@ -82,6 +82,6 @@ describe('Voucher Registration Page', () => {
     });
 
     function takeScreenshot(value) {
-        browser.saveScreenshot('voucher_subscription_' + value + '_' + browser.capabilities.browserName + '.png');
+        browser.saveScreenshot('Screenshot for value_ ' + value + '_' + browser.capabilities.browserName + '.png');
     }
 });
